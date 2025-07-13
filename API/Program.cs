@@ -1,3 +1,4 @@
+using API.MiddleWare;
 using Application.Interfaces;
 using Application.Services;
 
@@ -23,7 +24,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseMiddleware<ProfilingMiddleWares>();
 app.MapControllers();
 
 app.Run();
