@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.Threading.Tasks;
 using Domain.Entities;
 
 namespace Application.Interfaces
 {
     public interface IMerchantService
     {
-        Merchant CreateMerchant(string name, string email);
+        Task<Merchant> CreateMerchantAsync(string name, string email);
     }
 }
 

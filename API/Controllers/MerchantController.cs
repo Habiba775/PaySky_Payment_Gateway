@@ -6,7 +6,7 @@ using Domain.Entities;
 namespace API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")] 
+    [Route("api/[controller]")]
     public class MerchantController : ControllerBase
     {
         private readonly IMerchantService _merchantService;
@@ -15,15 +15,14 @@ namespace API.Controllers
         {
             _merchantService = merchantService;
         }
+
         [HttpPost]
-        public IActionResult Create([FromBody] CreateMerchantRequest request)
+        public async Task<IActionResult> CreateMerchant([FromBody] CreateMerchantRequest request)
         {
-            var merchant = _merchantService.CreateMerchant(request.Name, request.Email);
+            var merchant = await _merchantService.CreateMerchantAsync(request.Name, request.Email);
             return Ok(merchant);
         }
     }
+
+
 }
-
-
-
-

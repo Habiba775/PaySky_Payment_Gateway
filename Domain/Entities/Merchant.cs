@@ -17,8 +17,8 @@ namespace Domain.Entities
             Name = name;
             Email = email;
         }
+
+        // Required by EF Core
+        protected Merchant() { }
     }
 }
-
-
-
