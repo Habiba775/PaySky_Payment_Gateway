@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{36C294CC-43E5-413E-93BA-B68C84159C0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{834F5EEC-DC5A-481A-9FFD-95E0CBAB6517}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{834F5EEC-DC5A-481A-9FFD-95E0CBAB6517}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfraStructure", "InfraStructure\InfraStructure.csproj", "{58BCA053-F223-414C-9839-488ED7F2459B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfraStructure", "InfraStructure\InfraStructure.csproj", "{58BCA053-F223-414C-9839-488ED7F2459B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPaymentGateWay", "TestPaymentGateWay\TestPaymentGateWay.csproj", "{35666178-C54F-4CCF-97D3-C08259F9E627}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{58BCA053-F223-414C-9839-488ED7F2459B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58BCA053-F223-414C-9839-488ED7F2459B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58BCA053-F223-414C-9839-488ED7F2459B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35666178-C54F-4CCF-97D3-C08259F9E627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35666178-C54F-4CCF-97D3-C08259F9E627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35666178-C54F-4CCF-97D3-C08259F9E627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35666178-C54F-4CCF-97D3-C08259F9E627}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
