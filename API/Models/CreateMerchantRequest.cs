@@ -1,4 +1,8 @@
-﻿namespace API.Models
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.Extensions.Options;
+using Microsoft.SqlServer.Server;
+
+namespace API.Models
 {
     public class CreateMerchantRequest
     {
@@ -6,3 +10,7 @@
         public string Email { get; set; }
     }
 }
+
+
+
+
